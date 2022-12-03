@@ -22,7 +22,7 @@ class App extends Component {
             return { monsters: users };
           },
           () => {
-            console.log(users);
+            //console.log(users);
           }
         )
       );
@@ -42,14 +42,14 @@ class App extends Component {
       return monster.name.toLowerCase().includes(searchField);
     });
 
-    console.log(filteredMonsters);
+    //console.log(filteredMonsters);
 
     return (
       <div className="App">
         <SearchBox
           onChangeHandler={onSearchChange}
           placeholder="Search Monsters"
-          className="search-box"
+          className="monsters-search-box"
         />
         <CardList monsters={filteredMonsters} />
         {/*<input
